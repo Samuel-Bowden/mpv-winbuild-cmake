@@ -23,6 +23,7 @@ ExternalProject_Add(mpv
         vapoursynth
         libsdl2
     GIT_REPOSITORY https://github.com/mpv-player/mpv.git
+    GIT_TAG e48ac7ce08462f5e33af6ef9deeac6fa87eef01e # v0.40.0
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
     UPDATE_COMMAND ""
