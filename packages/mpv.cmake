@@ -6,22 +6,13 @@ ExternalProject_Add(mpv
         lcms2
         libarchive
         libass
-        libdvdnav
-        libdvdread
-        libiconv
         libjpeg
         libpng
-        luajit
-        rubberband
         uchardet
-        openal-soft
-        mujs
         vulkan
         shaderc
         libplacebo
         spirv-cross
-        vapoursynth
-        libsdl2
     GIT_REPOSITORY https://github.com/mpv-player/mpv.git
     GIT_TAG e48ac7ce08462f5e33af6ef9deeac6fa87eef01e # v0.40.0
     SOURCE_DIR ${SOURCE_LOCATION}
@@ -33,26 +24,22 @@ ExternalProject_Add(mpv
         --cross-file=${MESON_CROSS}
         --default-library=shared
         --prefer-static
-        -Ddebug=true
-        -Db_ndebug=true
+        -Dgpl=false
+        -Ddebug=false
+        -Db_ndebug=false
         -Doptimization=3
         -Db_lto=true
         ${mpv_lto_mode}
         -Dlibmpv=true
         -Dpdf-build=enabled
-        -Dlua=enabled
-        -Djavascript=enabled
-        -Dsdl2=enabled
-        -Dlibarchive=enabled
-        -Dlibbluray=enabled
-        -Ddvdnav=enabled
+        -Dlua=disabled
+        -Djavascript=disabled
         -Duchardet=enabled
-        -Drubberband=enabled
         -Dlcms2=enabled
-        -Dopenal=enabled
+        -Dopenal=disabled
         -Dspirv-cross=enabled
         -Dvulkan=enabled
-        -Dvapoursynth=enabled
+        -Dvapoursynth=disabled
         ${mpv_gl}
         -Dc_args='-Wno-error=int-conversion'
     BUILD_COMMAND ${EXEC} LTO_JOB=1 PDB=1 ninja -C <BINARY_DIR>
