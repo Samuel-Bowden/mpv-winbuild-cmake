@@ -272,6 +272,7 @@ ExternalProject_Add(ffmpeg
 
         --enable-filter=overlay
         --enable-filter=equalizer
+        --enable-filter=yadif
 
         --enable-protocol=async
         --enable-protocol=cache
@@ -295,6 +296,7 @@ ExternalProject_Add(ffmpeg
         --enable-protocol=tls
         --enable-protocol=srt
         --enable-protocol=udp
+        --enable-protocol=libsrt
 
         --enable-encoder=mjpeg
         --enable-encoder=ljpeg
