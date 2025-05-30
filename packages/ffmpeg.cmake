@@ -11,8 +11,6 @@ ExternalProject_Add(ffmpeg
         libsrt
         libass
         libbluray
-        libdvdnav
-        libdvdread
         libmodplug
         libpng
         libsoxr
