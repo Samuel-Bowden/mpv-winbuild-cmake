@@ -70,8 +70,6 @@ list(APPEND ep
     spirv-tools
     spirv-cross
     glslang
-    vulkan-header
-    vulkan
     libsdl2
     openal-soft
     libopenmpt
