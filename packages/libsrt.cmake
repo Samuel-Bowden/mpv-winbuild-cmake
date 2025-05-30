@@ -25,6 +25,7 @@ ExternalProject_Add(libsrt
 )
 
 ExternalProject_Add_Step(libsrt copy-binary
+    DEPENDEES build
     COMMAND ${CMAKE_COMMAND} -E copy <BINARY_DIR>/libsrt.dll          ${CMAKE_CURRENT_BINARY_DIR}/mpv-dev/libsrt.dll
     COMMENT "Copying srt binary"
 )
