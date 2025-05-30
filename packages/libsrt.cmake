@@ -24,5 +24,11 @@ ExternalProject_Add(libsrt
     LOG_DOWNLOAD 1 LOG_UPDATE 1 LOG_CONFIGURE 1 LOG_BUILD 1 LOG_INSTALL 1
 )
 
+ExternalProject_Add_Step(libsrt copy-dll
+    DEPENDEES install
+    COMMAND ${CMAKE_COMMAND} -E copy <BINARY_DIR>/libsrt.dll          ${CMAKE_CURRENT_BINARY_DIR}/mpv-dev/libsrt.dll
+    COMMENT "Copying srt dll"
+)
+
 force_rebuild_git(libsrt)
-cleanup(libsrt install)
+cleanup(libsrt copy-dll)
