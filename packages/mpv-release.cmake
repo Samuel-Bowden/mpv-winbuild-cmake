@@ -24,7 +24,6 @@ ExternalProject_Add(mpv-release
         libjpeg
         libpng
         uchardet
-        vulkan
         shaderc
         libplacebo
         spirv-cross
@@ -50,7 +49,7 @@ ExternalProject_Add(mpv-release
         -Dlcms2=enabled
         -Dopenal=disabled
         -Dspirv-cross=enabled
-        -Dvulkan=enabled
+        -Dvulkan=disabled
         -Dvapoursynth=disabled
         ${mpv_gl}
         -Dc_args='-Wno-error=int-conversion'
