@@ -260,7 +260,7 @@ jobs:
         if: ${{ github.event.inputs.github_release == 'true' && github.event.inputs.mpv_tarball == 'false' }}
         continue-on-error: true
         run: |
-          short_date=$(date "+%Y%m%d")
+          short_date=$(date "+%Y%m%d_%H%M")
           body=$(cat <<END
           ![GitHub release (by tag)](https://img.shields.io/github/downloads/shinchiro/mpv-winbuild-cmake/$short_date/total?label=Downloads)
 
