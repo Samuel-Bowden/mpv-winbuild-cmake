@@ -306,6 +306,7 @@ ExternalProject_Add(ffmpeg
         --enable-encoder=jpegls
 
         --enable-network
+        --enable-libsrt
 
         ${ffmpeg_cuda}
         ${ffmpeg_lto}
