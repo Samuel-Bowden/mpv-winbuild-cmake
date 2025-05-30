@@ -4,7 +4,7 @@ ExternalProject_Add(vulkan-header
     GIT_CLONE_FLAGS "--filter=tree:0"
     UPDATE_COMMAND ""
     GIT_REMOTE_NAME origin
-    GIT_TAG 75ad707a587e1469fb53a901b9b68fe9f6fbc11f
+    GIT_TAG v1.4.315
     CONFIGURE_COMMAND ${EXEC} CONF=1 cmake -H<SOURCE_DIR> -B<BINARY_DIR>
         -G Ninja
         -DCMAKE_BUILD_TYPE=Release
