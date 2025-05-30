@@ -10,7 +10,6 @@ ExternalProject_Add(ffmpeg
         libssh
         libsrt
         libass
-        libbluray
         libmodplug
         libpng
         libsoxr
