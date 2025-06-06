@@ -270,6 +270,7 @@ ExternalProject_Add(ffmpeg
         --enable-filter=overlay
         --enable-filter=equalizer
         --enable-filter=yadif
+        --enable-filter=bwdif
 
         --enable-protocol=async
         --enable-protocol=cache
