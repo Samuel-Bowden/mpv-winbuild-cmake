@@ -256,6 +256,7 @@ ExternalProject_Add(ffmpeg
         --enable-parser=mpeg4
         --enable-parser=mpeg4video
         --enable-parser=mpegvideo
+        --enable-parser=dvbsub
 
         --enable-parser=aac*
         --enable-parser=ac3
