@@ -24,6 +24,7 @@ ExternalProject_Add(mpv-release
         libjpeg
         libpng
         uchardet
+        openal-soft
         vulkan
         shaderc
         libplacebo
@@ -48,7 +49,7 @@ ExternalProject_Add(mpv-release
         -Djavascript=disabled
         -Duchardet=enabled
         -Dlcms2=enabled
-        -Dopenal=disabled
+        -Dopenal=enabled
         -Dspirv-cross=enabled
         -Dvulkan=enabled
         -Dvapoursynth=disabled
