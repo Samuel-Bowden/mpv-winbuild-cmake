@@ -14,8 +14,8 @@ ExternalProject_Add(mpv
         shaderc
         libplacebo
         spirv-cross
-    GIT_REPOSITORY https://github.com/mpv-player/mpv.git
-    GIT_TAG e48ac7ce08462f5e33af6ef9deeac6fa87eef01e # v0.40.0
+    GIT_REPOSITORY https://github.com/Samuel-Bowden/mpv.git
+    GIT_TAG ed5e395550448a37387bffbf6b0025ebc9ec3c12 # v0.40.0
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
     UPDATE_COMMAND ""
