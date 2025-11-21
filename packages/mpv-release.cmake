@@ -19,7 +19,6 @@ ExternalProject_Add(mpv-release
         ffmpeg
         fribidi
         lcms2
-        libarchive
         libass
         libjpeg
         libpng
