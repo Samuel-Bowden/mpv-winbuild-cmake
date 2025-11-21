@@ -9,6 +9,7 @@ ExternalProject_Add(libarchive
         openssl
         libxml2
     GIT_REPOSITORY https://github.com/libarchive/libarchive.git
+    GIT_TAG 8a7a9cc527fd1d6d8664315d3bed47c4259479cc # 3.7.9
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
     UPDATE_COMMAND ""
